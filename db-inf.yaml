@@ -12,8 +12,8 @@ spec:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
   claimRef:
-    namespace: growi
-    name: db-data
+    namespace: y-canfes
+    name: wiki-db-data
   nfs:
     server: nfs.unipro.infra
     path: /nfs/users/yuito-it/canfes/growi/db/data
@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: db-data
+  name: wiki-db-data
   labels:
     app: growi
   annotations:
@@ -47,8 +47,8 @@ spec:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
   claimRef:
-    namespace: growi
-    name: db-config
+    namespace: y-canfes
+    name: wiki-db-config
   nfs:
     server: nfs.unipro.infra
     path: /nfs/users/yuito-it/canfes/growi/db/config
@@ -56,7 +56,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: db-config
+  name: wiki-db-config
   labels:
     app: growi
   annotations:

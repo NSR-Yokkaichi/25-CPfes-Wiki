@@ -12,8 +12,8 @@ spec:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
   claimRef:
-    namespace: growi
-    name: es
+    namespace: y-canfes
+    name: wiki-es
   nfs:
     server: nfs.unipro.infra
     path: /nfs/users/yuito-it/canfes/growi/es/data
@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: es
+  name: wiki-es
   labels:
     app: growi
   annotations:
