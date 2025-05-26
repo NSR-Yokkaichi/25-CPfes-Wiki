@@ -16,7 +16,7 @@ spec:
     name: wiki-db-data
   nfs:
     server: nfs.unipro.infra
-    path: /nfs/users/yuito-it/canfes/growi/db/data
+    path: /nfs/users/yuito-it/canfes/wiki/db/data
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -51,7 +51,7 @@ spec:
     name: wiki-db-config
   nfs:
     server: nfs.unipro.infra
-    path: /nfs/users/yuito-it/canfes/growi/db/config
+    path: /nfs/users/yuito-it/canfes/wiki/db/config
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim

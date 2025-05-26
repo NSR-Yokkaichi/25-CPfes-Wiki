@@ -16,7 +16,7 @@ spec:
     name: wiki-data
   nfs:
     server: nfs.unipro.infra
-    path: /nfs/users/yuito-it/canfes/growi/app
+    path: /nfs/users/yuito-it/canfes/wiki/app
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
