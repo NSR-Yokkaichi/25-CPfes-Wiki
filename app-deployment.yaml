@@ -31,7 +31,10 @@ spec:
               value: "true"
             - name: OGP_URI
               value: http://ogp:8088
+          volumeMounts:
+            - name: growi-up-files
+              mountPath: /data
       volumes:
-        - name: growi-data
+        - name: growi-up-files
           persistentVolumeClaim:
-            claimName: wiki-data
+            claimName: wiki-up-files
